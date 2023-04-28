@@ -1,3 +1,10 @@
 from django.contrib import admin
+from .models import Pizza
 
-# Register your models here.
+
+class PizzaAdmin(admin.ModelAdmin):
+    list_display = ('nom', 'ingredients', 'vegetarienne', 'prix')
+    search_fields = ['ingredients']
+
+
+admin.site.register(Pizza, PizzaAdmin)
