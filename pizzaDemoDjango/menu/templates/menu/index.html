@@ -14,8 +14,13 @@
     <ul>
         {% for pizza in pizzas %}
         <div class="pizza_liste">
-            <li class="pizza_nom">{{pizza.nom}} <span class="pizza_prix">{{pizza.prix | floatformat:2}}€ </span></li>
+            <li class="pizza_nom">{{pizza.nom}}
+                <span class="pizza_prix">{{pizza.prix | floatformat:2}}€ </span>
+            </li>
             <li class="pizza_ingredients">{{pizza.ingredients}}</li>
+            {% if pizza.vegetarienne %}
+                    <span class="pizza_vegetarienne">VEGETARIENNE</span>
+                {% endif %}
         </div>
         {% endfor %}
     </ul>
