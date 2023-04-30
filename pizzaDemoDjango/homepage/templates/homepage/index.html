@@ -1,0 +1,19 @@
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+</head>
+<body>
+    <h1>Venez découvrir nos pizzas !</h1>
+        <a class="btn btn-warning mr-2" href="{% url 'menu_pizzas' %}" role="button">Menu pizzas</a>
+
+        <a class="btn btn-primary" href="{% url 'admin:index' %}" role="button">Administration</a>
+
+
+
+</body>
+</html>

@@ -1,17 +1,30 @@
 body{
-    background : url("images/bg_menu.jpeg")no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/bg_menu.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-size: cover;
     margin: 0px;
     padding: 0px;
     color: white;
+    position: relative;
 }
 
 .logo{
     margin : 35px 0px 25px 35px;
+}
+
+.cross{
+    position : absolute;
+    top: 25px;
+    right: 20px;
+    width: 30px;
+}
+.cross:hover{
+    cursor : pointer;
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+	animation: rotate-center 0.6s ease-in-out both;
 }
 
 .title_menu{
@@ -58,4 +71,27 @@ body{
     border-radius : 8px;
     font-size : 12px;
     color : black;
+}
+
+
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }

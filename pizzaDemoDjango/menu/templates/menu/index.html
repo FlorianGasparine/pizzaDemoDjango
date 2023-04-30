@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="{% static 'menu/menu.css' %}">
 </head>
 <body>
-    <img class="logo" src="{% static 'menu/images/small_logo.png' %}">
+    <a href="{% url 'homepage' %}">
+        <img class="logo" src="{% static 'menu/images/small_logo.png' %}" alt="Logo">
+        <img class="cross" src="{% static 'menu/images/cross.png' %}" alt="Croix de fermeture">
+    </a>
 
     <h1 class="title_menu">Les Pizzas</h1>
 
