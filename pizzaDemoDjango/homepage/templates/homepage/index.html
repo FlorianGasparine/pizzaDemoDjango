@@ -1,4 +1,5 @@
 {% load bootstrap4 %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +7,14 @@
     <title>Homepage</title>
     {% bootstrap_css %}
     {% bootstrap_javascript jquery='full' %}
+    <link rel="stylesheet" href="{% static 'homepage/homepage.css' %}">
 </head>
 <body>
-    <h1>Venez découvrir nos pizzas !</h1>
-        <a class="btn btn-warning mr-2" href="{% url 'menu_pizzas' %}" role="button">Menu pizzas</a>
 
-        <a class="btn btn-primary" href="{% url 'admin:index' %}" role="button">Administration</a>
+    <h1 class="title_homepage">Venez découvrir nos pizzas !</h1>
 
+    <a class="btn_menu" href="{% url 'menu_pizzas' %}" role="button">Menu pizzas</a>
+    <a class="btn_admin" href="{% url 'admin:index' %}" role="button">Administration</a>
 
 
 </body>

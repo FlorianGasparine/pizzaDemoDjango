@@ -1,0 +1,73 @@
+body{
+    position: relative;
+    background: url("images/main_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.title_homepage{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.btn_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width : 300px;
+    margin : 250px auto;
+    background: #d96034;
+    background-image: -webkit-linear-gradient(top, #d96034, #c47743);
+    background-image: -moz-linear-gradient(top, #d96034, #c47743);
+    background-image: -ms-linear-gradient(top, #d96034, #c47743);
+    background-image: -o-linear-gradient(top, #d96034, #c47743);
+    background-image: linear-gradient(to bottom, #d96034, #c47743);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: white;
+    font-size: 25px;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.btn_menu:hover {
+    background: #db3a00;
+    background-image: -webkit-linear-gradient(top, #db3a00, #db7e1b);
+    background-image: -moz-linear-gradient(top, #db3a00, #db7e1b);
+    background-image: -ms-linear-gradient(top, #db3a00, #db7e1b);
+    background-image: -o-linear-gradient(top, #db3a00, #db7e1b);
+    background-image: linear-gradient(to bottom, #db3a00, #db7e1b);
+    text-decoration: none;
+    color: white;
+}
+
+.btn_admin{
+    position: absolute;
+    top : -75px;
+    right: 20px;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    background: #ccc9b7;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+.btn_admin:hover {
+    background: #b8b1b4;
+    text-decoration: none;
+    color: white;
+}
